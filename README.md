@@ -1,18 +1,5 @@
 # Flask API Project with Full Test Suite 
  
-## Описание проекта 
-Веб-приложение на Flask с полным набором тестов и CI/CD. 
- 
-## Функциональности 
-- REST API для управления пользователями 
-- SQLite/PostgreSQL база данных 
-- Полная аутентификация (JWT) 
-- Docker контейнеризация 
- 
-## Структура проекта 
-\`\`\` 
-Структура папок
-Серийный номер тома: 94A6-A569
 C:.
 |   config.py
 |   docker-compose.yml
@@ -31,7 +18,7 @@ C:.
 |   |   misc.xml
 |   |   modules.xml
 |   |   workspace.xml
-|   |   ИтоговыйПроект.iml
+|   |   ╦Ж├в┬о┬г┬о┬в├л┬й┬П├а┬о┬е┬к├в.iml
 |   |   
 |   \---inspectionProfiles
 |           profiles_settings.xml
@@ -98,38 +85,7 @@ C:.
 \---__pycache__
         config.cpython-310.pyc
         
-\`\`\` 
- 
-## Запуск тестов 
+
 \`\`\`bash 
 python -m pytest tests/ -v 
-\`\`\` 
- 
-## Результаты тестов 
-\`\`\` 
-============================= test session starts =============================
-platform win32 -- Python 3.10.2, pytest-7.4.0, pluggy-1.6.0 -- C:\Users\└ыхъёрэфЁ\AppData\Local\Programs\Python\Python310\python.exe
-cachedir: .pytest_cache
-metadata: {'Python': '3.10.2', 'Platform': 'Windows-10-10.0.19045-SP0', 'Packages': {'pytest': '7.4.0', 'pluggy': '1.6.0'}, 'Plugins': {'anyio': '4.6.2.post1', 'cov': '4.1.0', 'html': '4.1.1', 'metadata': '3.1.1', 'xdist': '3.8.0'}}
-rootdir: C:\Users\└ыхъёрэфЁ\PycharmProjects\╚Єюуют√щ╧ЁюхъЄ
-plugins: anyio-4.6.2.post1, cov-4.1.0, html-4.1.1, metadata-3.1.1, xdist-3.8.0
-collecting ... collected 7 items
-
-tests/integration/test_routes.py::test_index_route PASSED                [ 14%]
-tests/integration/test_routes.py::test_health_check PASSED               [ 28%]
-tests/system/test_app.py::test_full_application_flow PASSED              [ 42%]
-tests/unit/test_models.py::test_user_creation PASSED                     [ 57%]
-tests/unit/test_models.py::test_user_to_dict PASSED                      [ 71%]
-tests/unit/test_services.py::test_create_user_manually PASSED            [ 85%]
-tests/unit/test_services_simple.py::test_simple_user_creation PASSED     [100%]
-
-============================== 7 passed in 0.25s ==============================
-\`\`\` 
- 
-## CI/CD 
-Автоматический запуск тестов при push в репозиторий через GitHub Actions. 
- 
-## Docker 
-\`\`\`bash 
-docker-compose up --build 
 \`\`\` 
