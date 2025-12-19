@@ -15,12 +15,12 @@ def create_app(config_class='config.Config'):
         module = __import__(module_name, fromlist=[class_name])
         config_class = getattr(module, class_name)
 
-    app.config.from_object(config_class)# Загрузка конфигурации
+    app.config.from_object(config_class)
 
-    db.init_app(app) # Инициализация БД
-    migrate.init_app(app, db)# Инициализация миграций
+    db.init_app(app)
+    migrate.init_app(app, db)
 
-    from app.routes import bp # Импорт маршрутов
-    app.register_blueprint(bp)# Регистрация маршрутов
+    from app.routes import bp
+    app.register_blueprint(bp)
 
     return app
